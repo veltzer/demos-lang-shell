@@ -1,0 +1,32 @@
+Exercises
+Chapter 1.
+1. Write a self sorting file script.
+Chapter 2.
+1. Write a script that sets a variable to another script
+2. Can you make the child script set a variable on the parent one?
+3. Load a file into an array and display a word on an offset received as argument.
+Chapter 3
+1. Receive a numeric value as argument and calculate it's power.
+2. Receive a file name and add a suffix to it for moving.
+3. write a program that replaces a file name extension. Usage repext file newext
+Chapter 4
+1. Write an email message using the mail command and check if the message was sent
+correctly.
+2. Emulate an end of month report. The report will run in the background. When it is
+finished it will save a logfile in /tmp. Write a command that tells if the report is done.
+Chapter 5
+1. Write a program – chklnk that will check if a symbolic link is not broken.
+2. Write a program – edit that will start your favorite editor. The program should be able to
+receive a file name as an argument. If the file exist it will simply run the editor with that
+file. If the file does not exist it will create the file. Also check if the file exists and is, for
+some reason, a directory.
+3. Write a command that lists directories only – lsd
+4. Write a program that will change all the files extensions on a directory using the
+program you wrote for chapter 3
+5. Write a program that will perform du command on root directory (/) but will skip the
+mount points.
+Chapter 6
+1. Write a program that will improve the suffix name modifications as in chapter 5 ex 4 but
+recursively.
+2. Write a function that will give error message to users in a well defined format and use it
+from programs you wrote in chapter 5.
