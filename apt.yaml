@@ -1,0 +1,6 @@
+---
+packages:
+       - name: ksh
+       - name: gawk
+       - name: mawk
+       - name: bash

@@ -11,6 +11,7 @@ packs=[
 	'ksh',
 	'gawk',
 	'mawk',
+        'bash',
 ]
 
 args=['sudo','apt-get','install','--assume-yes']
