@@ -1,0 +1,1 @@
+- add shellcheck(1) to check the syntax in all of the my shell scripts.
