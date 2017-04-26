@@ -8,6 +8,7 @@ def populate(d):
        'gawk',
        'mawk',
        'bash',
+       'shellcheck',
     ]
 
 def getdeps():
