@@ -1,4 +1,2 @@
-http://kvz.io/blog/2013/11/21/bash-best-practices
-
 command line humour:
 - http://www.janko.at/Humor/Computerwelt/Unix%20Command%20Replys.htm
