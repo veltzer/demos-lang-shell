@@ -1,4 +1,4 @@
-# demos-shell
+# demos-lang-shell
 
 Demos for various shells except bash.
 
