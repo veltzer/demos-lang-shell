@@ -5,9 +5,9 @@ use strict;
 my($expression)=$ARGV[0];
 my($file)=$ARGV[1];
 
-open(FILE,$file) || die("unable to open file [$file]");
+open(my $fh,"<",$file) || die("unable to open file [$file]");
 my($line);
-while($line=<FILE>) {
+while($line=<$fh>) {
 	if($line=~/$expression/) {
 		print($line);
 	}

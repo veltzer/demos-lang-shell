@@ -15,7 +15,7 @@ int main(int argc,char** argv,char** envp) {
 		return 1;
 	}
 	lseek(fd,1000000000,SEEK_CUR);
-	write(fd,(void*)buf,5);
+	write(fd,static_cast<void*>(buf),5);
 	close(fd);
 	return 0;
 }

@@ -1,6 +1,7 @@
 #!/bin/sh
 
-<<'COMMENT'
+# The block below documents what this example shows.
+: <<'COMMENT'
 
 This example shows that xargs has problems processing file names
 hat have whitespace in them. The -n 1 is to make xargs activate
@@ -14,5 +15,5 @@ are 2 of these in this script)
 COMMENT
 
 file=$0
-wc $file
-cat $file | xargs -n 1 echo | wc
+wc "${file}"
+cat "${file}" | xargs -n 1 echo | wc

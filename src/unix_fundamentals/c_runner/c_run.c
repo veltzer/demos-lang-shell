@@ -28,13 +28,13 @@ void cut_first_line(const char* filename,FILE* output) {
 	char* lineptr=(char*)malloc(n);
 	int ret;
 	int active=0;
-	while((ret=getline(&lineptr,&n,input)>0)) {
+	while((ret=getline(&lineptr,&n,input))>0) {
 		if(active) {
 #ifdef DEBUG
 			fprintf(stderr,"writing out [%s]\n",lineptr);
 #endif // DEBUG
-			int ret=fputs(lineptr,output);
-			if(ret==EOF) {
+			int put_ret=fputs(lineptr,output);
+			if(put_ret==EOF) {
 				perror("could not fputs");
 				abort();
 			}

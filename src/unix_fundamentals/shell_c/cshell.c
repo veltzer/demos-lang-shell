@@ -9,8 +9,7 @@ void show_prompt() {
 
 int main(int argc,char** argv,char** envp) {
 	char cmd[size];
-	char* ret;
-	int sys_ret;
+	const char* ret;
 	show_prompt();
 	ret=fgets(cmd,size,stdin);
 	if(ret==NULL) {
@@ -18,7 +17,7 @@ int main(int argc,char** argv,char** envp) {
 		return EXIT_FAILURE;
 	}
 	while(!feof(stdin)) {
-		sys_ret=system(cmd);
+		int sys_ret=system(cmd);
 		if(sys_ret==-1) {
 			perror("problem with system(3)");
 			return EXIT_FAILURE;

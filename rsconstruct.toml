@@ -1,8 +1,7 @@
 # rsconstruct build configuration for this repository.
 
 [processor.shellcheck]
-src_dirs = ["src"]
-args = ["--severity=error", "--shell=bash"]
+src_dirs = ["src", "to_integrate/shebang_java_run"]
 
 # ─── toml / yaml / json ──────────────────────────────────────────────────────
 
@@ -12,3 +11,23 @@ src_dirs = ["."]
 # lint the GitHub Actions workflow files with actionlint
 [processor.actionlint]
 src_dirs = [".github/workflows"]
+
+# ─── markdown ────────────────────────────────────────────────────────────────
+
+[processor.rumdl]
+src_files = ["README.md"]
+
+# ─── perl ────────────────────────────────────────────────────────────────────
+
+[processor.perlcritic]
+src_dirs = ["src"]
+
+# ─── c / c++ ─────────────────────────────────────────────────────────────────
+
+[processor.cppcheck]
+src_dirs = ["src/unix_fundamentals"]
+args = [
+	"--error-exitcode=1",
+	"--enable=warning,style,performance,portability",
+	"--inline-suppr",
+]
