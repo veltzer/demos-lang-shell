@@ -4,7 +4,7 @@
 
 //#define DEBUG
 
-void my_system(const char* cmd) {
+static void my_system(const char* cmd) {
 #ifdef DEBUG
 	fprintf(stderr,"doing system [%s]\n",cmd);
 #endif // DEBUG
@@ -18,7 +18,7 @@ void my_system(const char* cmd) {
 /*
  * cut all but the first line in the file and return the temp file holding the result
  */
-void cut_first_line(const char* filename,FILE* output) {
+static void cut_first_line(const char* filename,FILE* output) {
 	FILE* input=fopen(filename,"r");
 	if(input==NULL) {
 		perror("cannot open file");

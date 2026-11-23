@@ -3,7 +3,7 @@
 
 const int size=100;
 
-void show_prompt() {
+static void show_prompt() {
 	printf("> ");
 }
 
