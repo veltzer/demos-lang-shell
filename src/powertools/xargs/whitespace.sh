@@ -16,4 +16,4 @@ COMMENT
 
 file=$0
 wc "${file}"
-cat "${file}" | xargs -n 1 echo | wc
+xargs -n 1 echo < "${file}" | wc

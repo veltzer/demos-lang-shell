@@ -13,10 +13,10 @@ References:
 
 COMMENT
 
-cat "$0" | xargs -n 1 -d "\n" echo
+xargs -n 1 -d "\n" echo < "$0"
 echo "==================="
-cat "$0" | xargs -d "\n" echo
+xargs -d "\n" echo < "$0"
 echo "==================="
-cat "$0" | xargs -n 1 echo
+xargs -n 1 echo < "$0"
 echo "==================="
-cat "$0" | xargs echo
+xargs echo < "$0"
